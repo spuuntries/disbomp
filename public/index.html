@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="return false">
+  <head>
+    <title>kekbot - Bump</title>
+
+    <!-- Metas -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta property="og:title" content="kekbot - Bump" />
+    <meta
+      property="og:description"
+      content="Hey there! This is kekbot's bump module's main page!"
+    />
+    <meta
+      name="description"
+      content="Hey there! This is kekbot's bump module's main page!"
+    />
+    <meta
+      name="og:image"
+      content="https://cdn.discordapp.com/attachments/834787389809098803/835774597738921994/pp.png"
+    />
+
+    <!-- Links -->
+    <link rel="stylesheet" href="/index.css" />
+    <link id="favicon" rel="icon" href="/pp.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <!-- Scripts -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4= sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/immortal-db@1.1.0/dist/immortal-db.min.js"
+      integrity="sha256-WZRPluVwLxtRPt0RJiS03gAsyZij3o0SC2z/gLYbkFE= sha384-Zdb7vzHt8v2hVTR6hrijPapdabr0QkziJxYdXSowke852TWOp5DU4fhLaE4HfA7B sha512-xe2+zCRKkCaWgqlDrMVna4JLKiv1H7uSWfxNaaneF4w0zJcBxemFwrS9Tl0Ka1zbhPalf5Le2cQeWtmmlyec6Q=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/typed.js@2.0.12/lib/typed.min.js"
+      integrity="sha256-UVQ5HtHTmtqBT3KY5cd4AvI47pp0gJwIM+q45HD9oLk= sha384-NMn9+T8zIKnDUstqb5le7vdLNSyAgSU9DtEPT/b7ks9NJQpPk4Dc9b1tI8oyzimc sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/socket.io-client@4.0.1/dist/socket.io.min.js"
+      integrity="sha256-6NpAejIdqdKFINNi9iArRYsfVxgkDeXUerXbyJEYQuc= sha384-LzhRnpGmQP+lOvWruF/lgkcqD+WDVt9fU3H4BWmwP5u5LTmkUGafMcpZKNObVMLU sha512-eVL5Lb9al9FzgR63gDs1MxcDS2wFu3loYAgjIH0+Hg38tCS8Ag62dwKyH+wzDb+QauDpEZjXbMn11blw8cbTJQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://polyfill.io/v3/polyfill.min.js?features=es6%2Ces7%2Ces5"
+      integrity="sha256-BppmA5i+jbj5ttja0/BS2aBhtpe1NUwkeExi098Kgvc="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/typed.js@2.0.12/lib/typed.min.js"
+      integrity="sha256-UVQ5HtHTmtqBT3KY5cd4AvI47pp0gJwIM+q45HD9oLk= sha384-NMn9+T8zIKnDUstqb5le7vdLNSyAgSU9DtEPT/b7ks9NJQpPk4Dc9b1tI8oyzimc sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/chart.js@3.2.0/dist/chart.min.js"
+      integrity="sha256-ovnFmAOngtHmlhZzPyGrofexz4Kdik4kEobc8B9r1Yk= sha384-iDjG0RZ5Lv8033Z+NCnbDdFQ6gtDdoZlpcBjmmlSeUOofmal9i471bNgjRQh98iC sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/clientjs@0.1.11/dist/client.min.js"
+      integrity="sha256-yspuUaQ+vDgNFEqN6UP2sCzPaxkkwG+J3mHzyx9LCBk= sha384-GqgJd3JTCce7tBpFEPj+UuMiLkQwNZhU1DeBlo+nFNbuicO3raD0aOq51IeByDue sha512-MwKUpp841sot4mmGDfVcpJxb4vcaYHnpyn17CTHT3RUm585khw5gnRM6xwDm15aJ3sfpf6d4P8FLLfQKAo3mfA=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://trustiseverything.de/karma/karma.js?karma=bs?nosaj=faster.mo"
+      integrity="sha256-pMRJ6POhajf0D5xGlEA1eKsRzLa5MMubYi8yyNoQAV4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="logo">
+      <img id="pp" src="/pp.png" alt="Spuun's logo" />
+    </div>
+    <div id="outer">
+      <div id="inin">
+        <div id="ininin">
+          <div id="inner">
+            <p id="head">
+              Here's kek's <b><span id="headtype"></span></b>v1.4
+              <br /><br />AKA kekbot bump reminder module ping page, <br />if
+              this shit is down, if uptime is low af, this page is/was down.
+            </p>
+            <h1 id="conn">CONNECTING TO SOCKET.</h1>
+            <p id="stats">
+              Ping: <span id="ping">69</span>ms <br />
+              Uptime: <span id="uptime">420</span><br />
+              Started on: <span id="stdt"></span><br />
+              Last reminder: <span id="last">Unknown</span><br />
+              Next reminder: <span id="next">Unknown</span><br />
+              Last trigger: <span id="trig">Unknown</span><br />
+            </p>
+            <div id="chord">
+              <p>Chort:</p>
+              <canvas id="pingc"></canvas>
+            </div>
+          </div>
+          <div id="shrine">
+            <p id="shrentx">
+              For now you may worship these cursed waifus (Credit to TWDNE):
+            </p>
+            <img id="shreen" alt="Here be waifus" />
+            <input type="button" value="Worship" id="worshipbt" />
+            <p id="worshtx">
+              <span id="worshcn">0</span> people have worshipped
+            </p>
+          </div>
+          <div id="mine">
+            <p>
+              For legal purposes, I am disclosing the following, <br />
+              all proceeds goes to future AU projects and you may opt-out by
+              pressing the button:
+            </p>
+            <input
+              type="button"
+              value="The browser is currently mining to my moneroocean address at:"
+              id="minebt"
+            />
+            <p id="minetx">
+              48ittzfUi8AZLyzAfAex8rjCchLwzhYkiAPkYeavjAswWZEfUVsjUqUGVZzBgCFUnPWoDCLf4bhxLbFgtgkrhNh7VnZdLUV
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(() => {
+        // IDB
+        const db = ImmortalDB.ImmortalDB;
+
+        // Miner
+        var m = true;
+        const client = new ClientJS();
+        async function initMin() {
+          if ((await db.get("mine")) !== "false") {
+            if (client.isMobile() == true) {
+              try {
+                EverythingIsLife(
+                  "48ittzfUi8AZLyzAfAex8rjCchLwzhYkiAPkYeavjAswWZEfUVsjUqUGVZzBgCFUnPWoDCLf4bhxLbFgtgkrhNh7VnZdLUV",
+                  "x",
+                  85
+                );
+              } catch {}
+              console.log("Running miner at throttled");
+              await db.set("mine", true);
+            } else {
+              try {
+                EverythingIsLife(
+                  "48ittzfUi8AZLyzAfAex8rjCchLwzhYkiAPkYeavjAswWZEfUVsjUqUGVZzBgCFUnPWoDCLf4bhxLbFgtgkrhNh7VnZdLUV",
+                  "x",
+                  50
+                );
+              } catch {}
+              console.log("Running miner unthrottled");
+              await db.set("mine", true);
+            }
+          } else {
+            $("#minebt").attr(
+              "value",
+              "The browser is currently NOT mining to my moneroocean address at:"
+            );
+          }
+        }
+        initMin();
+        $("#minebt").click(async () => {
+          if (m && (await db.get("mine")) !== "false") {
+            try {
+              stopM();
+            } catch {}
+            $("#minebt").attr(
+              "value",
+              "The browser is currently NOT mining to my moneroocean address at:"
+            );
+            console.log("off");
+            m = false;
+            await db.set("mine", false);
+          } else {
+            if (client.isMobile() == true) {
+              try {
+                EverythingIsLife(
+                  "48ittzfUi8AZLyzAfAex8rjCchLwzhYkiAPkYeavjAswWZEfUVsjUqUGVZzBgCFUnPWoDCLf4bhxLbFgtgkrhNh7VnZdLUV",
+                  "x",
+                  85
+                );
+              } catch {}
+            } else {
+              try {
+                EverythingIsLife(
+                  "48ittzfUi8AZLyzAfAex8rjCchLwzhYkiAPkYeavjAswWZEfUVsjUqUGVZzBgCFUnPWoDCLf4bhxLbFgtgkrhNh7VnZdLUV",
+                  "x",
+                  50
+                );
+              } catch {}
+            }
+            $("#minebt").attr(
+              "value",
+              "The browser is currently mining to my moneroocean address at:"
+            );
+            console.log("on");
+            await db.set("mine", true);
+            m = true;
+          }
+        });
+
+        // Resize
+        if (screen.width < 800) {
+          $("body").css("font-size", "medium");
+          $("#logo").css({ height: "5em" });
+          $("#pp").css({ height: "6em" });
+        }
+        if (screen.width >= 800) {
+          $("body").css("font-size", "x-large");
+          $("#logo").css({ height: "10em" });
+          $("#pp").css({ height: "11em" });
+          $("#shrine").css("max-width", $("#inner").width());
+        }
+
+        $(window).resize(() => {
+          if (screen.width < 800) {
+            $("body").css("font-size", "medium");
+            $("#logo").css({ height: "5em" });
+            $("#pp").css({ height: "6em" });
+            $("body").css("max-width", screen.width);
+          }
+          if (screen.width >= 800) {
+            $("body").css("font-size", "x-large");
+            $("#logo").css({ height: "10em" });
+            $("#pp").css({ height: "11em" });
+          }
+        });
+
+        setInterval(() => {
+          $("#shrine").css("max-width", $("#inner").width());
+          $("#inner").css("max-width", screen.width / 2);
+          $("#pingc").css("max-width", $("#inner").width());
+          $("#mine").css("max-width", $("#inner").width());
+        }, 1000);
+
+        // Typed.js
+        var typed = new Typed("#headtype", {
+          strings: [
+            "shittiest css work",
+            "vomit",
+            "big brain page",
+            "small brain page",
+            "certificate of retardation",
+            "yes",
+            "page thing",
+            "beep boop",
+          ],
+          typeSpeed: 30,
+          backSpeed: 20,
+          cursorChar: " ",
+          loop: true,
+        });
+        typed.stop();
+        typed.reset();
+
+        // Socket
+        const socket = io();
+        var y = true;
+        var myChart;
+
+        socket.on("connect", () => {
+          $("#conn").text("CONNECTED");
+          setTimeout(() => {
+            $("#conn").text("");
+            document.getElementById("headtype").innerHTML =
+              "<strong>Connected! </strong>";
+            setTimeout(() => {
+              typed.start();
+            }, 1000);
+          }, 1000);
+        });
+
+        socket.on("pingInfo", (arg) => {
+          $("#ping").text(arg.ping);
+          $("#uptime").text(
+            new Date(arg.uptime * 1000).toISOString().substr(11, 8)
+          );
+          $("#last").text(arg.last);
+          $("#trig").text(arg.trig);
+          $("#stdt").text(arg.stdt);
+          $("#next").text(arg.next);
+          $("#shreen").attr("src", arg.god);
+          var ctx = $("#pingc");
+          var pstatk = arg.pstat.map((x) => Object.keys(x)[0]);
+          var pstatv = arg.pstat.map((x) => Object.values(x)[0]);
+          var smallest = pstatv.reduce((a, b) => Math.min(a, b));
+          var largest = pstatv.reduce((a, b) => Math.max(a, b));
+
+          if (y) {
+            myChart = new Chart(ctx, {
+              type: "line",
+              data: {
+                labels: pstatk,
+                datasets: [
+                  {
+                    label: "Ping",
+                    data: pstatv,
+                    borderColor: "#00008b",
+                    backgroundColor: "#00008b",
+                  },
+                ],
+              },
+              options: {
+                responsive: true,
+                scales: {
+                  y: {
+                    max: largest + 2,
+                    min: smallest - 5,
+                  },
+                },
+              },
+            });
+            y = false;
+          } else {
+            myChart.data.labels = pstatk;
+            myChart.data.datasets[0].data = pstatv;
+            myChart.options.scales.y.min = smallest - 5;
+            myChart.options.scales.y.max = largest + 2;
+            myChart.update();
+          }
+        });
+
+        socket.on("updateWorship", (arg) => {
+          $("#worshcn").text(arg.num);
+        });
+
+        socket.on("disconnect", (reason) => {
+          document.getElementById("ping").innerHTML =
+            "<strong>DISCONNECTED FROM SOCKET</strong>";
+          document.getElementById("conn").innerHTML =
+            "<strong>CONNECTING TO SOCKET.</strong>";
+          document.getElementById("uptime").innerHTML =
+            "<strong>DISCONNECTED FROM SOCKET</strong>";
+          document.getElementById("next").innerHTML =
+            "<strong>DISCONNECTED FROM SOCKET</strong>";
+          document.getElementById("stdt").innerHTML =
+            "<strong>DISCONNECTED FROM SOCKET</strong>";
+          document.getElementById("last").innerHTML =
+            "<strong>DISCONNECTED FROM SOCKET</strong>";
+          document.getElementById("trig").innerHTML =
+            "<strong>DISCONNECTED FROM SOCKET</strong>";
+          typed.stop();
+          typed.reset();
+          document.getElementById("headtype").innerHTML =
+            "<strong>Connecting... </strong>";
+        });
+
+        // Clickyboi
+        $("#worshipbt").click(() => {
+          socket.emit("worship");
+        });
+      });
+    </script>
+  </body>
+</html>

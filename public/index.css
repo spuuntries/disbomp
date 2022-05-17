@@ -1,0 +1,158 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 20 versions
+*/
+
+body {
+  font-family: Monospace;
+  background: #ffffff;
+  padding: 1em;
+  padding-top: 0;
+  text-align: center;
+}
+
+#outer {
+  display: inline-block;
+  overflow: hidden;
+  -webkit-border-radius: 2em;
+  border-radius: 2em;
+  padding: 1em;
+  border: #000000 solid thin;
+  background: #c9d6ff;
+}
+
+#inner {
+  display: inline-block;
+  margin: 1em;
+  padding: 1em;
+  -webkit-border-radius: 2em;
+  border-radius: 2em;
+  border: #000000 solid thin;
+  background: #f8dae6;
+}
+
+#inin {
+  border: #000000 solid thin;
+  padding: 1em;
+  -webkit-border-radius: 2em;
+  border-radius: 2em;
+  background: #abf3e0;
+}
+
+#ininin {
+  overflow: hidden;
+  background: #ffffff;
+  border: #00008b solid thin;
+  -webkit-border-radius: 2em;
+  border-radius: 2em;
+}
+
+#shrine {
+  display: inline-block;
+  text-align: center;
+  margin: 1em;
+  padding: 1em;
+  -webkit-border-radius: 2em;
+  border-radius: 2em;
+  border: #000000 solid thin;
+  background: #f8dae6;
+  overflow: hidden;
+}
+
+#shrine > p {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#shreen {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 2em;
+  border-radius: 2em;
+  border: #000000 solid thin;
+  margin-bottom: 1em;
+  -webkit-user-drag: none;
+}
+
+#headtype {
+  color: #ff4382;
+}
+
+#pp {
+  position: relative;
+  -webkit-user-drag: none;
+  bottom: 1em;
+  height: 6em;
+}
+
+#logo {
+  overflow: hidden;
+  height: 5em;
+}
+
+#worshcn {
+  border: #000000 solid thin;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #00008b;
+  color: #adff2f;
+  padding: 3px;
+}
+
+#worshipbt {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#stats {
+  padding: 1em;
+  background: #ffffff;
+  border: #000000 solid thin;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  word-wrap: break-word;
+}
+
+#stats > span {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  color: #3660c9;
+  padding: 3px;
+}
+
+#chord {
+  padding: 1em;
+  padding-top: 0;
+  border: #000000 solid thin;
+  -webkit-border-radius: 2em;
+  border-radius: 2em;
+  background: #ffffff;
+}
+
+#pingc {
+  border: #000000 solid thin;
+  -webkit-border-radius: 2em;
+  border-radius: 2em;
+  background: #c9d6ff;
+  padding: 1em;
+  min-height: 20px;
+}
+
+#mine {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: small;
+}
+
+#minetx {
+  word-wrap: break-word;
+}
+
+#minebt {
+  white-space: normal;
+}
